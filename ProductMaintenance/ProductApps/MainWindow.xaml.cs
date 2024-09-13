@@ -22,6 +22,7 @@ namespace ProductApps
     {
         Product cProduct;
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,6 +39,23 @@ namespace ProductApps
             catch (FormatException)
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
+            }
+
+            
+            
+            if (double.TryParse(priceTextBox.Text, out double price) &&
+                int.TryParse(quantityTextBox.Text, out int quantity))
+            {
+ 
+                double totalPayment = price * quantity;
+                double totalCharge = totalPayment + 25.00 + 5.00;
+
+                totalPaymentTextBlock.Text = $"{totalPayment:F2}";
+                TotalChargeWrapTextBox.Text = $"{totalCharge:F2}";
+            }
+            else
+            {
+                MessageBox.Show("Please enter valid numbers for price and quantity.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
