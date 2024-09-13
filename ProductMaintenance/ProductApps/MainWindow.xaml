@@ -19,6 +19,8 @@
         <TextBox Name="totalChargeTextBox" FontSize="10" Width="100" Height="20" HorizontalAlignment="Left" Margin="53,213,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top"/>
         <Label Content="Total Charge after adding the wrap charge ($5):" FontSize="10" HorizontalAlignment="Left" Height="24" Margin="48,237,0,0" VerticalAlignment="Top" Width="241"/>
         <TextBox Name="TotalChargeWrapTextBox" FontSize="10" Width="100" Height="20" HorizontalAlignment="Left" Margin="53,258,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top"/>
+        <Label Content="Total Charge After GST @10%:" FontSize="10" HorizontalAlignment="Left" Height="24" Margin="48,280,0,0" VerticalAlignment="Top" Width="241"/>
+        <TextBox Name="TotalChargeGSTTextBox" FontSize="10" Width="100" Height="20" HorizontalAlignment="Left" Margin="191,282,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top"/>
 
 
     </Grid>

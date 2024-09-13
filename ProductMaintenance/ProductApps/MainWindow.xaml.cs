@@ -49,14 +49,19 @@ namespace ProductApps
  
                 double totalPayment = price * quantity;
                 double totalCharge = totalPayment + 25.00 + 5.00;
+                double totalGST = totalPayment * 1.1;
 
                 totalPaymentTextBlock.Text = $"{totalPayment:F2}";
                 TotalChargeWrapTextBox.Text = $"{totalCharge:F2}";
+                TotalChargeGSTTextBox.Text = $"{totalGST:F2}";
             }
             else
             {
                 MessageBox.Show("Please enter valid numbers for price and quantity.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
+
+            
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
